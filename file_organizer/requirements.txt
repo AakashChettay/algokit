@@ -1,0 +1,2 @@
+# No specific external dependencies beyond standard library for basic file organization.
+# json (built-in) is used for configuration.
