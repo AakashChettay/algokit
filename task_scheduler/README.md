@@ -119,8 +119,7 @@ The `task_scheduler` module has been developed to meet specific requirements and
 
 ### **2. Uses custom queue or heap logic for scheduling**
 
-  * **Status:** **PASS**
-  * **Evaluation:** The `run-all` command loads pending tasks and uses Python's `heapq` module to maintain them in a min-heap (priority queue). Tasks are extracted and executed based on their priority (lowest number first).
+  * **Status:** **PASS**ng tasks and uses Python's `heapq` module to maintain them in a min-heap (priority queue). Tasks are extracted and executed based on their priority (lowest number first).
   * **Implementation Detail:** `heapq.heappush` and `heapq.heappop` are used within `run_scheduler`.
 
 ### **3. Priority number should always be unique (for pending tasks)**
@@ -158,3 +157,4 @@ The `task_scheduler` module has been developed to meet specific requirements and
   * **Status:** **PASS**
   * **Evaluation:** The module relies solely on Python's standard library (`os`, `json`, `heapq`, `uuid`, `datetime`, `time`, `argparse`), which ensures it runs consistently across Windows, macOS, and Linux.
   * **Implementation Detail:** Uses OS-agnostic functions for file paths and operations.
+  * **Evaluation:** The `run-all` command loads pendi
